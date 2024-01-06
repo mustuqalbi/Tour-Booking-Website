@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root {
+    --primary: #0077b6;
+    --secondary: #48cae4;
+    --black: #333;
+    --white: #fff;
+    --box-shadow: 0.1rem 0.1rem 0.5rem  rgba(0, 0, 0, 0.261);
+}
+
+.font-style{
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: -3px 1px 3px #7a7979;
+}
+/* * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+} */
+
+/* html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+} */
+
+.sec {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    display: flex;
+}
+
+.first {
+    display: flex;
+    margin-top: 10px;
+}
+
+.first p {
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.first span {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 2px;
+}
+
+.first i {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 30px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.icon {
+    float: right;
+    margin-left: 600px;
+}
+
+.icon i {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.icon span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* header */
+.header {
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0;/ */
+    /* z-index: 1000; */
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 5%;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo img {
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.header .navbar a {
+    font-size: 1.3rem;
+    color: var(--black);
+    margin: 0 1rem;
+    margin-top: 4px;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+}
+
+/* header  */
+
+/* bg  */
+.bg{
+   background-image: url(img/Lake-Saiful-Malook.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+}
+
+
+/* availability */
+
+.availability{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.availability form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #eee;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.availability form .box {
+    flex: 1 1 5rem;
+}
+
+.availability form .box p {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.availability form .box .input {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--black);
+    margin: 0.1rem 0;
+    border-radius: .5rem;
+    border: 1px solid white;
+}
+.button{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid var(--primary);
+    height: 60px;
+    width: 180px;
+    margin-top: 40px;
+}
+
+
+.table .icon-style{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+
+/* bg  */
+
+.head span {
+    margin-left: 500px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #1A2B48;
+}
+
+
+
+.destination h1 {
+    margin-left: 470px;
+    margin-top: 40px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #1A2B48;
+}
+
+/* slider  */
+
+.gallery .slide {
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .slide img {
+    margin-top: 50px;
+    height: 65%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* margin-left: 60px; */
+}
+
+.gallery .slide .icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery .slide .icon i {
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.gallery .slide:hover .icon {
+    display: flex;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+
+.name p {
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+
+.name span {
+    color: var(--black);
+}
+
+
+/* slider  */
+
+
+/* regular-slider */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+/* .slick-current {
+    opacity: 1;
+} */
+
+/* regular-slider */
+
+.packages {
+    text-align: center;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.grids img {
+    margin-top: 90px;
+    height: 350px;
+    width: 600px;
+    box-sizing: border-box;
+    display: block;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    margin-left: 30px;
+    color: var(--box-shadow);
+}
+
+.gf h2 {
+    margin-top: 160px;
+    text-align: center;
+    font-size: 40px;
+    color: var(--black);
+}
+
+.wrapper-text-color{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gf p {
+    color: #727272;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gf button {
+    /* text-align: center; */
+    margin-left: 250px;
+    margin-top: 30px;
+    color: white;
+    background-color: #FBD808;
+    border: #FBD808;
+    height: 50px;
+    width: 140px;
+    border-radius: 40px;
+}
+
+/* cards  */
+.hotel {
+    background-color: #F7F8FA;
+}
+
+.hotel h1 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.card-body1 {
+    display: flex;
+    margin-top: 60px;
+    /* margin: 60px; */
+}
+
+.card-body1 h5 {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.card-body1 h5:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.coll {
+    color: #FFB21D;
+    margin-left: 15px;
+}
+
+.review {
+    margin-left: 10px;
+}
+
+.card-body1 strong {
+    margin-left: 20px;
+}
+
+.column {
+    margin-left: 130px;
+}
+
+/* end  */
+
+.hotel2 {
+    margin-top: 90px;
+}
+
+.hotel2 h1 {
+    margin-left: 95px;
+}
+
+/* end  */
+
+.gf h2 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.gf .icon-hover:hover{
+     color: #FBD808;
+     border: 2px solid #FBD808;
+}
+
+row .gf .icon-hover:hover{
+    color: #FBD808;
+    border: 2px solid #FBD808;
+}
+/* footer  */
+
+.footer{
+   background-color: #F7F8FA;
+   /* background-color: rgb(233, 108, 108); */
+   margin-top: 5rem;
+
+}
+.footer .box{
+    margin-left: 7rem;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    /* gap: 1rem; */
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.footer .box-container .box a{
+    font-size: 1.2rem;
+    display: block;
+    /* color: var(--white); */
+    color: var(--black);
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    /* color: var(--primary); */
+    color: var(--black);
+    padding-right: .5rem;
+
+}
+
+.footer .box-container .box a:hover{
+    color: var(--primary);
+}
+
+.footer .share{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a{
+    /* color: var(--primary); */
+    color: var(--black);
+    /* color: #FFB21D; */
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    border: .1rem solid var(--black);
+    margin: .3rem;
+    text-decoration: none;
+}
+
+.footer .share a:hover{
+    color: var(--white);
+    background: var(--primary);
+    transform: rotate(360deg);
+    border: var(--primary);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--black);
+}
+
+.footer .credit span{
+    color: var(--primary);
+}
+/* footer  */
+
+
